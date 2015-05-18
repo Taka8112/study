@@ -38,7 +38,6 @@ function Analysis(path ,callback){
       var src = ctx.getImageData(0, 0, canvas.width, canvas.height); //ImageDataオブジェクト取得
       var idata = src.data;
       var num = src.data.length;//ピクセルデータ総数取得
-      //next(null, src , num, path);
       next(null, src , num, red ,green ,blue ,path);
     });
   });
