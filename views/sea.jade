@@ -1,0 +1,15 @@
+extends layout
+   
+block content 
+  p Test now
+          
+  table
+    -for(var i=0;i<7;i++)
+      tr
+        td
+          img(src='/images/test/image_sample_'+i+'.jpg')
+        td='RED : ' + red_stdev[i] +'平均'+ red_average[i]+'変動係数'+ red_ratio[i]
+        td= ' , '
+        td='GREEN : ' + green_stdev[i] +'平均'+ green_average[i] +'変動係数 '+ green_ratio[i]
+        td= ' , '
+        td='BLUE : ' + blue_stdev[i] +'平均'+ blue_average[i] +'変動係数'+ blue_ratio[i]

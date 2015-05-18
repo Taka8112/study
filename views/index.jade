@@ -1,0 +1,11 @@
+extends layout
+
+block content 
+  h1= title
+  p Welcome to #{title}
+  p Test now
+
+  -for(var i=0;i<5;i++)
+    img(src='/images/test/mono_'+i+'.png')
+  -for(var i=0;i<9;i++)
+    img(src='/images/test/imgres_'+i+'.jpg')

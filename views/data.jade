@@ -1,0 +1,15 @@
+extends layout
+   
+block content 
+  p Test now
+          
+  table
+    -for(var i=0;i<9;i++)
+      tr
+        td
+          img(src='/images/test/imgres_'+i+'.jpg')
+        td='RED   : 標準偏差' + red_stdev[i] +' 平均: '+ red_average[i] +'変動係数 : '+ red_ratio[i]
+        td= ' , '
+        td='GREEN : 標準偏差  ' + green_stdev[i] +' 平均: '+ green_average[i] +'変動係数 : '+ green_ratio[i]
+        td= ' , '
+        td='BLUE  : 標準偏差' + blue_stdev[i] + ' 平均: '+ blue_average[i] +'変動係数 :  '+ blue_ratio[i]
